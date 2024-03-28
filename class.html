@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="class.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="class.css">
+    <title>Class A, B</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container" id="classAForm">
+            <h2>Class A</h2>
+            <input type="text" id="aInput" placeholder="Enter name of the students in class A">
+            <button onclick="submitDetails('a')">Submit</button>
+            <div id="classAOutput" class="output-container"></div>
+        </div>
+        <div class="form-container" id="classBForm">
+            <h2>Class B</h2>
+            <input type="text" id="bInput" placeholder="Enter name of the students in class B">
+            <button onclick="submitDetails('b')">Submit</button>
+            <div id="classBOutput" class="output-container"></div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="form-container" id="mergedOutput">
+            <h2>Total Student's names in both classes</h2>
+            <button onclick="mergeArrays()">Click</button>
+            <div id="mergedOutputContainer" class="output-container"></div>
+        </div>
+    </div>
+</body>
+</html>
